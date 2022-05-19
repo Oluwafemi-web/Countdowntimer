@@ -1,0 +1,194 @@
+* {
+  width: 100vw;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hwb(235 10% 86%);
+  height: 100%;
+  box-sizing: border-box;
+}
+.stars {
+  position: absolute;
+  height: 70%;
+}
+.launch {
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 20%;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.time {
+  width: 20%;
+}
+.one,
+.two {
+  background-color: hsl(236, 21%, 26%);
+  border-radius: 0.4rem 0.4rem 0 0;
+  width: 100%;
+  height: 25%;
+}
+.two {
+  border-radius: 0 0 0.4rem 0.4rem;
+  position: relative;
+  bottom: 7.7rem;
+  z-index: -1;
+  box-shadow: 0 0.3rem 0.2rem 0;
+}
+.text {
+  color: hsl(345, 95%, 68%);
+  font-weight: 700;
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 4rem;
+  text-align: center;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.circle,
+.circle--right {
+  background-color: hsl(234, 17%, 12%);
+  width: 0.7rem;
+  height: 0.7rem;
+  position: relative;
+  border-radius: 0.4rem;
+  top: -11.2rem;
+  left: -0.3rem;
+}
+.circle--right {
+  top: -11.9rem;
+  left: 90%;
+}
+.label {
+  width: 100%;
+  font-size: 0.5rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: auto;
+  color: hsl(237, 18%, 59%);
+  position: relative;
+  bottom: 7rem;
+}
+.socials {
+  width: 50%;
+  margin: auto;
+  position: relative;
+  top: 6rem;
+  left: 2.5rem;
+}
+.icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+}
+.footer {
+  background: url("images/pattern-hills.svg");
+  height: 10rem;
+  position: relative;
+  top: 13.6rem;
+}
+@media (min-width: 768px) {
+  .circle--right {
+    left: 95%;
+    top: -12.3rem;
+  }
+  .circle {
+    top: -11.6rem;
+  }
+  .one,
+  .two {
+    height: 30%;
+  }
+  .footer {
+    top: 9rem;
+  }
+  .socials {
+    left: 10rem;
+  }
+}
+@media (min-width: 1024px) {
+  * {
+    width: 100vw;
+    /* overflow: hidden; */
+  }
+  .launch {
+    margin-top: 10%;
+  }
+  .timer {
+    width: 50%;
+  }
+  .one,
+  .two {
+    height: 30%;
+  }
+  .circle {
+    top: -11.5rem;
+  }
+  .circle--right {
+    top: -12.2rem;
+    left: 93%;
+  }
+  .socials {
+    left: 12rem;
+  }
+  .footer {
+    top: 12.2rem;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .timer {
+    width: 50%;
+    margin-top: 3%;
+  }
+  .launch {
+    font-size: 2rem;
+  }
+  .one,
+  .two {
+    height: 30%;
+  }
+  .two {
+    top: -18.7rem;
+  }
+  .circle {
+    top: -28.3rem;
+  }
+  .circle--right {
+    top: -29rem;
+    left: 97%;
+  }
+  .footer {
+    top: 3.4rem;
+  }
+  .label {
+    font-size: 2rem;
+    top: -18rem;
+    text-align: center;
+  }
+  .socials {
+    left: 22rem;
+  }
+  .icons {
+    width: 2rem;
+    height: 2rem;
+  }
+  .text {
+    font-size: 6rem;
+    top: -10rem;
+  }
+}
